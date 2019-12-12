@@ -6,6 +6,7 @@
   "scripts": {
     "commit": "npx git-cz",
     "test": "mocha src/index-test.js -w",
+    "test:single": "mocha src/index-test.js",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -48,12 +49,13 @@
         "revert",
         "ci"
       ],
-      "warnOnFail": true
+      "warnOnFail": false
     }
   },
   "husky": {
     "hooks": {
-      "commit-msg": "validate-commit-msg"
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": "npm run test:single"
     }
   }
 }
