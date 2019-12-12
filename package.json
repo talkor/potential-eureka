@@ -1,0 +1,22 @@
+{
+  "name": "potential-eureka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talkor/potential-eureka.git"
+  },
+  "author": "Tal Koren (https://talkor.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talkor/potential-eureka/issues"
+  },
+  "homepage": "https://github.com/talkor/potential-eureka#readme",
+  "dependencies": {
+    "unique-random-array": "2.0.0"
+  }
+}
