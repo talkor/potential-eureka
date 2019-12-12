@@ -6,8 +6,7 @@
   "scripts": {
     "commit": "npx git-cz",
     "test": "mocha src/index-test.js -w",
-    "semantic-release": "semantic-release",
-    "commitmsg": "validate-commit-msg"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -44,14 +43,17 @@
         "refactor",
         "perf",
         "test",
+        "build",
         "chore",
-        "revert"
+        "revert",
+        "ci"
       ],
-      "warnOnFail": false,
-      "maxSubjectLength": 100,
-      "subjectPattern": "^[A-Z]+-[0-9]+ - .*",
-      "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
-      "helpMessage": ""
+      "warnOnFail": true
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "validate-commit-msg"
     }
   }
 }
